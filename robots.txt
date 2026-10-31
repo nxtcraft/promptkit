@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nxtcraft.github.io/promptkit/sitemap.xml

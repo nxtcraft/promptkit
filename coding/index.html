@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT Prompts for Coding – 8 Developer Prompt Templates | PromptKit</title>
+<meta name="description" content="8 free ChatGPT prompts for developers: code review, debugging, unit tests, SQL queries, regex, refactoring, API docs and code explanations. Copy in one click.">
+<meta name="keywords" content="chatgpt prompts for coding, ai prompts for developers, chatgpt code review prompt, chatgpt debugging prompt, ai coding prompts, chatgpt for programming">
+<link rel="canonical" href="https://nxtcraft.github.io/promptkit/coding/">
+<meta property="og:title" content="ChatGPT Prompts for Coding – 8 Developer Templates">
+<meta property="og:description" content="Ready-to-use ChatGPT prompts for code review, debugging, unit tests, SQL, regex and more. Free, copy in one click.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../css/main.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best ChatGPT prompt for code review?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The best code review prompt asks ChatGPT to check for specific issues: bugs, security vulnerabilities, performance, readability, and edge cases. Always paste the actual code and specify the language. Ask for the corrected version alongside the explanation so you can directly compare the before and after." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I use ChatGPT to debug code?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Paste the error message and the relevant code snippet together. Tell ChatGPT the language/framework. Ask it to: (1) explain the root cause, (2) show the fixed code, and (3) explain why the fix works. This gives you a fix you understand, not just one you copy." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can ChatGPT write unit tests for my code?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paste your function and tell ChatGPT which testing framework to use (Jest, PyTest, JUnit, etc.). Ask for tests covering the happy path, edge cases, and error cases. ChatGPT will generate complete test files you can run directly." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="cat-hero">
+  <h1>💻 ChatGPT Prompts for Coding</h1>
+  <p>8 developer-ready prompts for code review, debugging, testing, SQL, regex and more. Paste your code, fill in the blanks, get results.</p>
+</div>
+
+<div class="container">
+  <nav style="font-size:13px; color:#5b21b6; margin-bottom:20px;">
+    <a href="../" style="color:#7c3aed; text-decoration:none;">← All Prompts</a> &nbsp;·&nbsp;
+    <a href="../marketing/" style="color:#7c3aed; text-decoration:none;">📣 Marketing</a> &nbsp;·&nbsp;
+    <a href="../writing/" style="color:#7c3aed; text-decoration:none;">✍️ Writing</a>
+  </nav>
+
+  <div class="prompt-grid" id="prompt-grid"></div>
+
+  <div class="seo">
+    <h2>ChatGPT Prompts for Developers — Complete Guide</h2>
+    <p>These prompts work with ChatGPT (GPT-4), Claude, and GitHub Copilot Chat. For best results with coding tasks, use GPT-4 or Claude 3 Sonnet — they produce significantly more accurate code than older models.</p>
+
+    <h3>Tips for coding prompts</h3>
+    <ul>
+      <li><strong>Always specify the language</strong> — Python, JavaScript, TypeScript, Go, etc.</li>
+      <li><strong>Paste the actual code</strong> — don't describe it; paste it so the AI sees exactly what you have</li>
+      <li><strong>Tell it the framework</strong> — React vs Vue, Django vs FastAPI, Express vs Hono changes everything</li>
+      <li><strong>Ask for explanations</strong> — "explain why this fix works" teaches you, not just fixes the problem</li>
+      <li><strong>Specify the testing framework</strong> for test generation (Jest, Mocha, PyTest, JUnit, etc.)</li>
+    </ul>
+
+    <h3>When ChatGPT makes coding mistakes</h3>
+    <p>ChatGPT can hallucinate library functions that don't exist, especially for newer frameworks. Always verify: (1) the function/method exists in the version you're using, (2) the imports are correct, and (3) run the code before shipping. For security-critical code (auth, encryption), have a human review the output.</p>
+
+    <details>
+      <summary>Is ChatGPT good for writing SQL queries?</summary>
+      <p>Yes — ChatGPT is excellent for SQL. Describe your table structure, the data you need, and any filters or aggregations. It handles JOINs, GROUP BY, window functions, and CTEs well. For very large or complex queries, break them into subqueries and ask ChatGPT to optimise each part separately.</p>
+    </details>
+
+    <div style="margin-top:20px; text-align:center; font-size:12px; color:#5b21b6;">
+      Also try: <a href="https://nxtcraft.github.io/devtoolbox/" style="color:#7c3aed;">DevToolbox</a> (JSON, regex, JWT, Base64 and more) ·
+      <a href="../" style="color:#7c3aed;">← All Prompts</a>
+    </div>
+  </div>
+</div>
+
+<footer>&copy; 2026 PromptKit · <a href="https://nxtcraft.github.io/">NxtCraft Tools</a></footer>
+
+<script src="../js/prompts.js"></script>
+<script src="../js/app.js"></script>
+<script>
+  currentCat = 'coding';
+  document.getElementById('filter-chips') && (document.getElementById('filter-chips').style.display = 'none');
+  render();
+</script>
+</body>
+</html>
