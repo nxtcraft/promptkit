@@ -50,6 +50,7 @@ function render() {
       <button class="expand-btn" onclick="toggleExpand(${p.id})" id="exp-${p.id}">Show full prompt ↓</button>
       <div class="card-actions">
         <button class="copy-btn" onclick="copyPrompt(${p.id})" id="copy-${p.id}">📋 Copy Prompt</button>
+        <button class="copy-btn" onclick="sharePromptWA(${p.id})" style="background:#25d366;color:#fff;border-color:#25d366;">💬 Share</button>
       </div>
     </div>`).join('');
 }
@@ -94,6 +95,13 @@ async function copyPrompt(id) {
     btn.textContent = '📋 Copy Prompt';
     btn.classList.remove('copied');
   }, 2000);
+}
+
+function sharePromptWA(id) {
+  const p = PROMPTS.find(x => x.id === id);
+  if (!p) return;
+  const text = `🤖 *${p.title}* (AI Prompt)\n\n${p.prompt}\n\n_More free prompts: https://nxtcraft.github.io/promptlab/_`;
+  window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
 }
 
 function toggleFav(id) {
